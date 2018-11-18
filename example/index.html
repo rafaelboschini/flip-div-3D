@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ <title>FlipDiv 3D - No Dependency Component</title>
+ <script src="../dist/flipdiv3d.js"></script>
+ <script>
+  function fnClick(e){
+    console.log('fnClick',e);
+  }
+
+  function init(){
+    let comps = document.getElementsByTagName('flip-div');
+    comps[0].addEventListener('clicked',fnClick);
+  }
+  </script>
+</head>
+<body onload="init();">
+  <ul>
+    <li>
+        <flip-div height="300px" width="300px">
+            <card-item class-names="card-image"></card-item>
+            <card-item class-names="bordered-box background-gray first-card">
+              <div style="text-align: center;">
+                <img src="https://cdn1.iconfinder.com/data/icons/photo-stickers-hats/128/hat_4-512.png" width="100px"/>
+              </div>
+              <p>Rafael Boschini</p>
+              <p>rafaelboschini@gmail.com</p>
+              <p style="text-align: center;">
+                <a href="http://br.linkedin.com/in/rafael-boschini-5747311">
+                  <img src="https://cdn4.iconfinder.com/data/icons/flat-brand-logo-2/512/linkedin-512.png" width="100px"/>
+                </a>
+              </p>
+            </card-item>
+          </flip-div>
+    </li>
+    <li>
+        <flip-div height="300px" width="300px">
+            <card-item class-names="bordered-box background-white">
+              <p>nononon onnonon onon</p>
+              <p>nononon onnonon onon</p>
+              <p>nononon onnonon onon</p>
+              <p>nononon onnonon onon</p>
+            </card-item>
+            <card-item class-names="bordered-box background-yellow">
+              <p> nononono nonon onon</p>
+            </card-item>
+          </flip-div>
+    </li>
+    <li>
+        <flip-div height="300px" width="300px">
+            <card-item class-names="bordered-box background-gray first-card">
+              <div style="text-align: center;">
+                <img src="https://cdn1.iconfinder.com/data/icons/photo-stickers-hats/128/hat_4-512.png" width="100px"/>
+              </div>
+              <p>Rafael Boschini</p>
+              <p>rafaelboschini@gmail.com</p>
+              <p style="text-align: center;">
+                <a href="http://br.linkedin.com/in/rafael-boschini-5747311">
+                  <img src="https://cdn4.iconfinder.com/data/icons/flat-brand-logo-2/512/linkedin-512.png" width="100px"/>
+                </a>
+              </p>
+            </card-item>
+            <card-item class-names="bordered-box card-image"></card-item>
+          </flip-div>
+    </li>
+  </ul>
+  <style>
+      body{
+        background-color: #bfd0dc;
+        font-family: 'Arial';
+      }
+      ul li{
+       display: inline-block;
+      }
+     .bordered-box {
+       border: solid 1px #ccc;
+     }
+     .card-image{
+       background: url(https://avatars3.githubusercontent.com/u/6330358?s=400&u=a56d42fe7c96236dab339b5c974ba0cbff8b1008&v=4) 0 0 no-repeat;
+     }
+
+     .background-white{
+       background-color: white;
+     }
+     .background-yellow{
+       background-color: yellow;
+     }
+     .background-gray{
+       background-color: #adaaa5;
+     }
+
+     .first-card{
+       padding: 5px;
+       color:white;
+     }
+   </style>
+
+</body>
+
+</html>

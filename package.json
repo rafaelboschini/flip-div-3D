@@ -1,0 +1,38 @@
+{
+  "name": "flip-div",
+  "version": "0.0.1",
+  "description": "Flid Div 3D Component",
+  "module": "dist/esm/index.js",
+  "main": "dist/index.js",
+  "types": "dist/types/components.d.ts",
+  "collection": "dist/collection/collection-manifest.json",
+  "files": [
+    "dist/"
+  ],
+  "scripts": {
+    "build": "stencil build",
+    "start2": "stencil build --dev --watch --serve",
+    "start": "serve .",
+    "test": "stencil test --spec --e2e",
+    "test.watch": "stencil test --spec --e2e --watchAll"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@stencil/core": "~0.15.1",
+    "@stencil/sass": "^0.1.1",
+    "@types/jest": "23.3.9",
+    "jest": "23.6.0",
+    "jest-cli": "23.6.0",
+    "serve": "^10.0.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ionic-team/stencil-component-starter.git"
+  },
+  "author": "Rafael Boschini",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ionic-team/stencil"
+  },
+  "homepage": "https://github.com/ionic-team/stencil"
+}
